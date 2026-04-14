@@ -18,6 +18,15 @@ order: 5
 | [openbb_tushare](https://github.com/finanalyzer/openbb_tushare) | 数据源插件 | 高质量、标准化、专业级 |
 | [openbb-hka](https://github.com/finanalyzer/openbb-hka) | 分析仪表盘 | 可视化、AI 集成、开箱即用 |
 
+## 关注我们
+
+<div align="center">
+  <img src="/assets/img/commons/qrcode.jpg" alt="Finanalyzer 公众号二维码" width="200"><br><br>
+  <strong>Finanalyzer</strong><br>
+  微信号：<code>passxyz_kpclib</code><br><br>
+  <small>扫码或搜索关注公众号，获取最新项目动态和金融数据分析教程</small>
+</div>
+
 ## 技术理念
 
 - **开源优先**：所有代码在 GitHub 上完全开放
