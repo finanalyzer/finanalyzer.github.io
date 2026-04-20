@@ -16,6 +16,7 @@ order: 5
 |------|------|------|
 | [openbb_akshare](https://github.com/finanalyzer/openbb_akshare) | 数据源插件 | 免费、覆盖广、无需 API Key |
 | [openbb_tushare](https://github.com/finanalyzer/openbb_tushare) | 数据源插件 | 高质量、标准化、专业级 |
+| [openbb_tdx](https://github.com/finanalyzer/tdx) | 数据源插件 | 实时行情、低延迟、零成本 |
 | [openbb-hka](https://github.com/finanalyzer/openbb-hka) | 分析仪表盘 | 可视化、AI 集成、开箱即用 |
 
 ## 关注我们

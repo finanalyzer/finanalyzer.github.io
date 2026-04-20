@@ -5,7 +5,7 @@ order: 1
 
 # 项目总览
 
-Finanalyzer 提供三个核心开源项目，构成从数据获取到可视化分析的完整工具链。
+Finanalyzer 提供四个核心开源项目，构成从数据获取到可视化分析的完整工具链。
 
 ---
 
@@ -88,6 +88,42 @@ income = obb.equity.fundamental.income(
 
 ---
 
+## 🔌 openbb_tdx
+
+> OpenBB 的通达信 TdxQuant 数据源扩展插件 —— 实时行情、低延迟、零成本
+
+[GitHub 仓库](https://github.com/finanalyzer/tdx) · `pip install openbb_tdx`
+
+### 主要功能
+
+- **实时行情数据**：支持实时快照、K 线、分笔（Tick）数据
+- **高质量历史数据**：通达信近三十年金融数据积累
+- **全面覆盖**：A 股、港股、ETF、可转债、基金等
+- **零频率限制**：本地通信，无调用频率限制
+- **完全免费**：需安装通达信终端（V7.72+）
+
+### 快速开始
+
+```bash
+pip install openbb_tdx
+python -c "import openbb; openbb.build()"
+```
+
+```python
+from openbb import obb
+# 获取历史股价
+df = obb.equity.price.historical(
+    symbol="600028",
+    start_date="2024-01-01",
+    end_date="2025-12-31",
+    provider="tdxquant"
+).to_dataframe()
+```
+
+> ⚠️ 使用 openbb_tdx 需要预先启动通达信金融终端，目前仅支持 Windows
+
+---
+
 ## 🖥️ openbb-hka
 
 > A 股 & 港股分析仪表盘 —— 可视化 + AI 赋能
@@ -132,14 +168,14 @@ docker compose up
 ┌─────────────────────────────────┐
 │         openbb-hka              │
 │    (可视化分析仪表盘)            │
-├────────────┬────────────────────┤
-│ openbb_    │ openbb_            │
-│ akshare    │ tushare            │
-│ (免费数据) │ (专业数据)         │
-├────────────┴────────────────────┤
+├──────────┬──────────┬───────────┤
+│ openbb_  │ openbb_  │ openbb_   │
+│ akshare  │ tushare  │ tdx       │
+│ (免费数据)│ (专业数据)│ (实时行情)│
+├──────────┴──────────┴───────────┤
 │       OpenBB Platform           │
-├────────────┬────────────────────┤
-│  AKShare   │    Tushare Pro     │
-│ (免费接口) │  (专业 API)        │
-└────────────┴────────────────────┘
+├──────────┬──────────┬───────────┤
+│ AKShare  │ Tushare  │ TdxQuant  │
+│ (免费接口)│(专业 API)│ (官方接口)│
+└──────────┴──────────┴───────────┘
 ```
