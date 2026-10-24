@@ -3,7 +3,6 @@ title: "使用 OpenBB Workspace 构建 A 股和港股分析仪表盘"
 date: 2025-09-15 09:00:00 +0800
 categories: [教程, 仪表盘]
 tags: [OpenBB, Dashboard, A股, 港股, Docker, AI]
-pin: true
 ---
 
 **openbb-hka** 是一个 OpenBB Workspace 应用，提供用于构建 A 股和港股分析仪表盘的模板和组件。它使用 openbb-akshare 和 openbb-tushare 作为数据源。

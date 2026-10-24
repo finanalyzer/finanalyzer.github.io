@@ -3,7 +3,6 @@ title: "openbb_tdx：打通通达信与 OpenBB 的 A 股港股量化数据新桥
 date: 2026-04-20 09:00:00 +0800
 categories: [教程, 数据源]
 tags: [OpenBB, Tdx, 通达信, A股, 港股, 实时行情, 量化]
-pin: true
 ---
 
 ## 导读

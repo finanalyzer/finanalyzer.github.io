@@ -3,7 +3,6 @@ title: "使用 Tushare 作为 OpenBB 的数据源"
 date: 2025-08-01 09:00:00 +0800
 categories: [教程, 数据源]
 tags: [OpenBB, Tushare, A股, 港股, 财务数据]
-pin: true
 ---
 
 **OpenBB** 作为一个开源金融数据平台，致力于为投资者、分析师和开发者提供免费、透明的金融数据接口。
