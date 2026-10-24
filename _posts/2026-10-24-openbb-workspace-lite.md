@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "OpenBB Workspace 开源了，不会部署？自己构建 Docker 镜像就行"
-date: 2026-10-24 12:00:00 +0800
+date: 2026-10-24 00:00:00 +0800
 categories: [OpenBB]
 tags: [fintech, openbb]
 ---
